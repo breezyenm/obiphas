@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:obiphas/analytics/analytics.dart';
 import 'package:obiphas/menu.dart';
 import 'package:obiphas/notifications/notifications.dart';
+import 'package:obiphas/screens/dashboard.dart';
+import 'package:obiphas/screens/inventory.dart';
 import 'package:obiphas/search/search.dart';
 
 void main() => runApp(MyApp());
@@ -35,18 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 children: [
                   Search(),
-                  Expanded(
-                    child: Container(
-                      margin: EdgeInsets.all(50),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Analytics(),
-                          Notifications(),
-                        ],
-                      ),
-                    ),
-                  )
+                  Inventory(),
                 ],
               ),
             ),

@@ -7,10 +7,9 @@ class Search extends StatelessWidget {
       padding: EdgeInsets.only(top: 40),
       width: MediaQuery.of(context).size.width * 0.7640625,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            width: MediaQuery.of(context).size.width * 0.7302083333333333,
+            width: MediaQuery.of(context).size.width * 0.7,
             height: 40,
             child: TextField(
               decoration: InputDecoration(
@@ -31,6 +30,9 @@ class Search extends StatelessWidget {
                 ),
               ),
             ),
+          ),
+          SizedBox(
+            width: 20,
           ),
           Container(
             height: 40,
