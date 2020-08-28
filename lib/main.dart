@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:obiphas/analytics/analytics.dart';
 import 'package:obiphas/menu.dart';
 import 'package:obiphas/notifications/notifications.dart';
+import 'package:obiphas/screens/customers.dart';
 import 'package:obiphas/screens/dashboard.dart';
 import 'package:obiphas/screens/inventory.dart';
 import 'package:obiphas/search/search.dart';
@@ -37,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 children: [
                   Search(),
-                  Inventory(),
+                  Customers(),
                 ],
               ),
             ),
